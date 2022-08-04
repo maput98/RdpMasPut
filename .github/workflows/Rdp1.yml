@@ -23,3 +23,5 @@ jobs:
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@sswOrd!" -Force)
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp 3389
+    - name: All Done! You can close Tab now! Maximum VM time:12h.
+      run: cmd /c loop.bat 
